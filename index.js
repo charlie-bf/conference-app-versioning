@@ -11,7 +11,7 @@ let server = http.createServer(function (req, res) {
   } else {
     res.writeHead(405, {'Content-Type': 'text/plain'});
     res.end('501');
-		console.log('NOT WORKING')
+		console.log('Error with request or response.')
   }
 });
 server.listen(3000);
