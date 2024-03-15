@@ -3,7 +3,6 @@ let http = require('http');
 
 var AppVersion = "1.0.2"
 
-
 let server = http.createServer(function (req, res) {
   if( req.method === 'GET' ) {
     res.writeHead(200, {'Content-Type': 'text/plain'});
